@@ -1,10 +1,10 @@
 # UNAHUR - Caracteristicas de Lenguajes de Programación - 2026
 Profesor: Pablo Pandolfo
-Alumna: Suarez Fabiola
+<br>Alumna: Suarez Fabiola
 ---
 ## TP 1 - Clasificación de Lenguajes de Programación
 
-Planilla colaboratiba, en donde se investigaron 180 lenguajes de programación, desde su año de creación, incluyendo Paradigma, generación del lenguaje, concurrencia, entre otras características.
+Planilla colaboratiba, en donde se investigaron 180 lenguajes de programación, desde su año de creación, incluyendo Paradigma, generación del lenguaje, concurrencia, entre otras características.<br>
 Los cinco lenguajes que investigue son: Trac, RPG, Comal, Sparck y Clipper
 
 - Acceso a [Planilla de lenguajes](https://docs.google.com/spreadsheets/d/19aTSzIjQNs6RBNJFz0bftTlqKr-uWbohbBZnxmP0-r0/edit?gid=0#gid=0)
@@ -14,7 +14,7 @@ Los cinco lenguajes que investigue son: Trac, RPG, Comal, Sparck y Clipper
 ---
 ## TP 3 - Solucionar un problema en diferentes paradigmas
 
-- Acceso a [Problemas de Paradigma](Trabajo Practico N°3.pdf)
+- Acceso a [Problemas de Paradigma](Trabajo%20Practico%20N°3.pdf)
 ---
 ## TP 4 - Identificar la gramatica de if incluyendo las producciones desde el axioma hasta los terminales
 ---

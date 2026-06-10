@@ -17,5 +17,7 @@ Los cinco lenguajes que investigue son: Trac, RPG, Comal, Sparck y Clipper
 - Acceso a [Problemas de Paradigma](https://github.com/Fabiola-Suarez/CLP/blob/main/Trabajo%20Pr%C3%A1ctico%20N%C2%B0%203.pdf).
 ---
 ## TP 4 - Identificar la gramatica de if incluyendo las producciones desde el axioma hasta los terminales
+
+- Acceso a [Gramatica del if](https://github.com/Fabiola-Suarez/CLP/tree/main/TP_4).
 ---
 ## TP 5 Tabla GIC, BNF, EBNF y ABNF del lenguaje BRA 

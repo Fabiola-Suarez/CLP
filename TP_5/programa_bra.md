@@ -26,6 +26,7 @@ final
 
 ## GIC
 
+```txt
 Programa -> começo Sentencias final
 
 Sentencias -> Sentencia | Sentencia Sentencias
@@ -70,9 +71,11 @@ Digito -> 0 | ... | 9
 OperadorSuma -> +
 
 OperadorResta -> -
+```
 
 ## BNF
 
+```txt
 <programa> ::= começo <sentencias> final
 
 <sentencias> ::= <sentencia> | <sentencia> <sentencias>
@@ -104,9 +107,11 @@ OperadorResta -> -
 <operadorSuma> ::= +
 
 <operadorResta> ::= -
+```
 
 ## EBNF
 
+```txt
 <programa> ::= começo <sentencias> final
 
 <sentencias> ::= <sentencia> { <sentencia> }*
@@ -140,9 +145,11 @@ OperadorResta -> -
 <operadorSuma> ::= +
 
 <operadorResta> ::= -
+```
 
 ## ABNF
 
+```txt
 programa: começo sentencias final
 
 sentencias: sentencia { sentencia }
@@ -186,4 +193,4 @@ digito: uno de 0-9
 operadorSuma: +
 
 operadorResta: -
-
+```

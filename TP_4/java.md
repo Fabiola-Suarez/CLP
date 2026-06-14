@@ -1,39 +1,42 @@
-Axioma = CompilationUnit
+Axioma: CompilationUnit
 
-No Terminales = { CompilationUnit,
-    TypeDeclaration,
-    ClassOrInterfaceDeclaration,
-    ClassDeclaration,
-    NormalClassDeclaration,
-    ClassBody,
-    ClassBodyDeclarations,
-    ClassBodyDeclaration,
-    Block,
-    BlockStatements,
-    BlockStatement,
-    Statement,
-    ParExpression,
-    Expression}
+CompilationUnit = OrdinaryCompilationUnit | ModularCompilationUnit .
 
-Terminales = {class,
-    if,
-    else,
-    {,
-    },
-    (,
-    ),
-    ;,
-    true,
-    false}
+OrdinaryCompilationUnit = [ PackageDeclaration ] { ImportDeclaration } { TypeDeclaration } .
 
-Producciones de GIC = 
-CompilationUnit -> TypeDeclaration -> ClassOrInterfaceDeclaration -> ClassDeclaration -> NormalClassDeclaration-> class Identifier ClassBody -> { ClassBodyDeclarations }
-ClassBodyDeclarations -> ClassBodyDeclaration  -> Block -> { BlockStatements }
-BlockStatements -> BlockStatement -> Statement -> if ParExpression Statement -> if ParExpression Statement else Statement -> Block
-Statement -> ;
-ParExpression -> ( Expression )
-Expression -> true
-Expression -> false
+TypeDeclaration = ClassDeclaration | InterfaceDeclaration | ";" .
 
+ClassDeclaration = NormalClassDeclaration | EnumDeclaration |
+                   RecordDeclaration .
 
+NormalClassDeclaration = { ClassModifier } "class" TypeIdentifier
+                         [ TypeParameters ] [ ClassExtends ]
+                         [ ClassImplements ] [ ClassPermits ] ClassBody .
 
+ClassBody = "{" { ClassBodyDeclaration } "}" .
+
+ClassBodyDeclaration = ClassMemberDeclaration |
+                       InstanceInitializer |
+                       StaticInitializer |
+                       ConstructorDeclaration .
+
+InstanceInitializer = Block .
+
+Block = "{" [ BlockStatements ] "}" .
+
+BlockStatements = BlockStatement { BlockStatement } .
+
+BlockStatement = LocalClassOrInterfaceDeclaration |
+                 LocalVariableDeclarationStatement |
+                 Statement .
+
+Statement = StatementWithoutTrailingSubstatement |
+            LabeledStatement |
+            IfThenStatement |
+            IfThenElseStatement |
+            WhileStatement |
+            ForStatement .
+
+IfThenStatement = "if" "(" Expression ")" Statement .
+
+IfThenElseStatement = "if" "(" Expression ")" StatementNoShortIf "else" Statement .

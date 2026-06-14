@@ -1,47 +1,28 @@
-Axioma = translation-unit
+Axioma: translation-unit 
 
-No Terminales = {
-    translation-unit,
-    declaration-seq,
-    declaration,
-    function-definition,
-    compound-statement,
-    statement-seq,
-    statement,
-    selection-statement,
-    Condition,
-    Expression
-}
+translation-unit = [ declaration-seq ] .
 
-Terminales = {
-    if,
-    else,
-    int,
-    main,
-    true,
-    false,
-    {,
-    },
-    (,
-    ),
-    ;
-}
+declaration-seq = declaration { declaration } .
 
-Producciones de GIC =
-TranslationUnit -> DeclarationSeq -> Declaration -> FunctionDefinition -> int main ( ) CompoundStatement
-CompoundStatement -> { StatementSeq }
-CompoundStatement -> { }
+declaration = block-declaration | nodeclspec-function-declaration |
+              function-definition | template-declaration |
+              deduction-guide | linkage-specification |
+              namespace-definition | empty-declaration |
+              attribute-declaration | module-import-declaration .
 
-StatementSeq -> Statement
-StatementSeq -> Statement StatementSeq
+function-definition = [ attribute-specifier-seq ] [ decl-specifier-seq ]
+                      declarator [ virt-specifier-seq ] function-body .
 
-Statement -> SelectionStatement
-Statement -> CompoundStatement
-Statement -> ;
+function-body = compound-statement .
 
-SelectionStatement -> if ( Condition ) Statement
-SelectionStatement -> if ( Condition ) Statement else Statement
+compound-statement = "{" [ statement-seq ] "}" .
 
-Condition -> Expression
+statement-seq = statement { statement } .
 
+statement = labeled-statement | expression-statement | compound-statement |
+            selection-statement | iteration-statement | jump-statement |
+            declaration-statement | try-block .
 
+selection-statement = "if" [ "constexpr" ] "(" condition ")" statement |
+                      "if" [ "constexpr" ] "(" condition ")" statement "else" statement |
+                      "switch" "(" condition ")" statement .

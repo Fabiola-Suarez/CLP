@@ -1,50 +1,20 @@
-Axioma = translation-unit
+Axioma: translation-unit
 
-No Terminales = {
-    translation-unit,
-    declaration-seq,
-    declaration,
-    function-definition,
-    compound-statement,
-    statement-seq,
-    statement,
-    selection-statement,
-    condition,
-    expression
-}
+translation-unit = external-declaration { external-declaration } .
 
-Terminales = {
-    if,
-    else,
-    int,
-    main,
-    {,
-    },
-    (,
-    ),
-    ;
-}
+external-declaration = function-definition | declaration .
 
-Producciones de GIC =
-translation-unit -> declaration-seq
-declaration-seq -> declaration
-declaration-seq -> declaration declaration-seq
+function-definition = declaration-specifiers declarator compound-statement .
 
-declaration -> function-definition
-function-definition -> int main ( ) compound-statement
+compound-statement = "{" [ block-item-list ] "}" .
 
-compound-statement -> { statement-seq }
-compound-statement -> { }
+block-item-list = block-item { block-item } .
 
-statement-seq -> statement
-statement-seq -> statement statement-seq
+block-item = declaration | statement .
 
-statement -> selection-statement
-statement -> compound-statement
-statement -> ;
+statement = labeled-statement | compound-statement | expression-statement |
+            selection-statement | iteration-statement | jump-statement .
 
-selection-statement -> if ( condition ) statement
-selection-statement -> if ( condition ) statement else statement
-
-condition -> expression
-
+selection-statement = "if" "(" expression ")" statement |
+                      "if" "(" expression ")" statement "else" statement |
+                      "switch" "(" expression ")" statement .

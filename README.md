@@ -11,6 +11,9 @@ Los cinco lenguajes que investigue son: Trac, RPG, Comal, Sparck y Clipper
 
 ---
 ## TP 2 - Analisis de datos referidos a los LP 
+
+- Acceso a [Analisis de lenguajes de programción](https://github.com/Fabiola-Suarez/CLP/tree/main/TP_2.ipynb).
+
 ---
 ## TP 3 - Solucionar un problema en diferentes paradigmas
 

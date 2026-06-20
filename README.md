@@ -25,5 +25,5 @@ Los cinco lenguajes que investigue son: Trac, RPG, Comal, Sparck y Clipper
 ---
 ## TP 5 Tabla GIC, BNF, EBNF y ABNF del lenguaje BRA 
 
-- Acceso a [Programa bra](https://github.com/Fabiola-Suarez/CLP/tree/main/TP_5/programa_bra.md).
+- Acceso a [Programa bra](https://github.com/Fabiola-Suarez/CLP/blob/main/TP_5/programa_bra.md).
 

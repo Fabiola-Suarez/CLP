@@ -12,12 +12,12 @@ Los cinco lenguajes que investigue son: Trac, RPG, Comal, Sparck y Clipper
 ---
 ## TP 2 - Analisis de datos referidos a los LP 
 
-- Acceso a [Analisis de lenguajes de programción](https://github.com/Fabiola-Suarez/CLP/tree/main/TP_2.ipynb).
+- Acceso a [Analisis de lenguajes de programción](https://github.com/Fabiola-Suarez/CLP/tree/main/TP_2/Tp_2.ipynb).
 
 ---
 ## TP 3 - Solucionar un problema en diferentes paradigmas
 
-- Acceso a [Problemas de Paradigma](https://github.com/Fabiola-Suarez/CLP/blob/main/Trabajo%20Pr%C3%A1ctico%20N%C2%B0%203.pdf).
+- Acceso a [Problemas de Paradigma](https://github.com/Fabiola-Suarez/CLP/blob/main/TP_3/Trabajo%20Pr%C3%A1ctico%20N%C2%B0%203.pdf).
 ---
 ## TP 4 - Identificar la gramatica de if incluyendo las producciones desde el axioma hasta los terminales
 

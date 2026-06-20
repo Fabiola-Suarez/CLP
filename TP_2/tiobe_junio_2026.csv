@@ -1,0 +1,21 @@
+ranking_2026,ranking_2025,lenguaje,porcentaje,variacion,paradigma_principal
+1,1,Python,18.96,-6.91,multiparadigma
+2,3,C,10.77,1.30,imperativo
+3,2,C++,8.03,-2.65,multiparadigma
+4,4,Java,7.90,-0.94,orientado a objetos
+5,5,C#,4.85,0.17,orientado a objetos
+6,6,JavaScript,3.04,-0.17,multiparadigma
+7,8,Visual Basic,2.80,0.59,orientado a eventos
+8,12,SQL,1.77,0.23,declarativo
+9,14,R,1.69,0.30,funcional
+10,9,Delphi/Object Pascal,1.54,-0.60,orientado a objetos
+11,16,Scratch,1.46,0.27,visual
+12,18,Rust,1.26,0.30,multiparadigma
+13,7,Go,1.20,-1.08,imperativo
+14,15,PHP,1.17,-0.08,multiparadigma
+15,25,Swift,1.00,0.27,multiparadigma
+16,11,Ada,0.97,-0.74,imperativo
+17,10,Fortran,0.95,-0.91,imperativo
+18,13,Perl,0.92,-0.55,multiparadigma
+19,19,Assembly language,0.87,-0.04,bajo nivel
+20,17,MATLAB,0.85,-0.28,multiparadigma

@@ -36,3 +36,8 @@ Los cinco lenguajes que investigue son: Trac, RPG, Comal, Sparck y Clipper
 
 - Acceso a [Programa bra](https://github.com/Fabiola-Suarez/CLP/blob/main/TP_5/programa_bra.md).
 
+
+## TP 6 Mapa de control de flujo
+
+- Acceso a [Mapa](https://github.com/Fabiola-Suarez/CLP/blob/main/TP_6/TP6.drawio).
+

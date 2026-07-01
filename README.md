@@ -39,4 +39,4 @@ Los cinco lenguajes que investigue son: Trac, RPG, Comal, Sparck y Clipper
 
 ## TP 6 Mapa de control de flujo
 
-- Acceso a [Mapa de control de flujo](TP_6/TP6.drawio).
+- Acceso a [Mapa de control de flujo](https://app.diagrams.net/?url=https%3A%2F%2Fraw.githubusercontent.com%2FFabiola-Suarez%2FCLP%2Fmain%2FTP_6%2FTP6.drawio).
